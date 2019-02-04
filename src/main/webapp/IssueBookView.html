@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Issue</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/backbone-min.js"></script>
+    <script src="js/models/issuedBookModel.js"></script>
+</head>
+<body>
+    <script>
+        var issuedBooks = new IssuedBooksCollection();
+        issuedBooks.fetch().then(function () { console.log(issuedBooks); }) ;
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer View</title>
+</head>
+<body>
+<h1 id ="welcomeHeading"></h1>
+<hr>
+<ul>
+    <li><a href="BookList.html">Check Books Available</a></li>
+    <li><a href="CustomerInfo.html">Your Details</a></li>
+    <li><a href="FineCheck.html">Pending operation</a></li>
+    <li><a href="index.html" onclick="logout()">Logout</a></li>
+</ul>
+<script>
+    var name = sessionStorage.getItem('username')
+    if (name === null){
+        location.replace("index.html");
+    }
+    var message = 'Welcome '+name;
+    document.getElementById("welcomeHeading").innerHTML=message;
+    function logout() {
+        sessionStorage.clear();
+        location.replace('index.html')
+    }
+</script>
+<div id="customer-detail-tmpl"></div>
+</body>
+</html>

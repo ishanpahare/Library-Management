@@ -1,0 +1,54 @@
+package com.lms.libraryManagement.resources;
+
+import com.lms.libraryManagement.dto.Customer;
+import com.lms.libraryManagement.services.CustomerService;
+import org.json.simple.JSONObject;
+
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+import java.util.List;
+
+@Path("/customers")
+public class CustomerResource {
+
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public List getCustomerList() {
+        List<Customer> customerList =null;
+        CustomerService customerService = new CustomerService();
+        customerList=customerService.getAllCustomer();
+        return customerList;
+    }
+
+    @GET
+    @Path("/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Customer getCustomer(@PathParam("id") int id){
+        CustomerService customerService = new CustomerService();
+        Customer customer = customerService.getCustomer(id);
+        return customer;
+    }
+
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Customer addCustomer(JSONObject inputJsonObject){
+        /*CustomerService customerService = new CustomerService();
+        Customer customer = customerService.addCustomer(id);
+        return customer;*/
+        String name = (String) inputJsonObject.get("customerName");
+        CustomerService customerService = new CustomerService();
+        Customer customer = customerService.addCustomer(name);
+        return customer;
+
+    }
+
+    @DELETE
+    @Path("/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public void deleteCustomer(@PathParam("id") int id){
+        CustomerService customerService = new CustomerService();
+        customerService.deleteCustomer(id);
+    }
+
+}
