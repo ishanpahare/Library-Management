@@ -1,7 +1,9 @@
 package com.lms.libraryManagement;
 
 import com.lms.libraryManagement.dao.LibrarianDao;
+import com.lms.libraryManagement.dto.Librarian;
 import com.lms.libraryManagement.utils.CurrentSession;
+import com.lms.libraryManagement.utils.ReadJson;
 import com.lms.libraryManagement.views.MainView;
 import org.hibernate.Session;
 
@@ -13,16 +15,19 @@ public class App {
         LibrarianDao librarianDao = new LibrarianDao();
 
         Session session = CurrentSession.getCurrentSession();
-        mv.getMainView(mv,session);
-/*Adding new Librarians to the DB
         Librarian librarian1 = new Librarian();
-        Librarian librarian2 = new Librarian();
+        ReadJson.getJson(session);
+        librarian1.setUsername("lib1");
+        librarian1.setPassword("password");
+        librarianDao.insertLibrarian(librarian1, session);
+        mv.getMainView(mv,session);
+
+     /*   Librarian librarian2 = new Librarian();
         Librarian librarian3 = new Librarian();
         Librarian librarian4 = new Librarian();
         Librarian librarian5 = new Librarian();
-
-        /* Run Once to add Books to DB
-        ReadJson.getJson(session);
+*/
+        //Run Once to add Books to DB
 
         /*Adding books to list of vendors
         Vendor v1 = new Vendor();
@@ -40,14 +45,12 @@ public class App {
         //VendorUtil.addBook(v2, session);
         //VendorUtil.addBook(v3, session);
         //VendorUtil.addBook(v4, session);
-        //VendorUtil.addBook(v5, session); *//*
+        //VendorUtil.addBook(v5, session); */
 
 
 
-        librarian1.setUsername("lib1");
-        librarian1.setPassword("password");
-        librarianDao.insertLibrarian(librarian1, session);
 
+/*
         librarian2.setUsername("lib2");
         librarian2.setPassword("password");
         librarianDao.insertLibrarian(librarian2, session);

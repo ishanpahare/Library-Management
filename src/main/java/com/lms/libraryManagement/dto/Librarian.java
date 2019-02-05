@@ -17,7 +17,10 @@ public class Librarian {
     private String username;
     private String password;
 
-    @ManyToMany
+    @ManyToMany(
+            cascade = {CascadeType.ALL},
+            fetch = FetchType.LAZY
+    )
     @JsonbTransient
     @NotFound(action = NotFoundAction.IGNORE)
     @JoinTable(name = "LIBRARIAN_ISSUED",

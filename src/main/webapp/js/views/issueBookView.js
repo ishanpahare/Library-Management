@@ -1,4 +1,4 @@
-var AddBookView = Backbone.View.extend({
+var IssueBookView = Backbone.View.extend({
     template: _.template($('#issue-book-tmpl').html()),
 
     events:{
@@ -6,12 +6,13 @@ var AddBookView = Backbone.View.extend({
     },
     issue: function(e) {
         e.preventDefault();
-        var uid = this.$('input[name="bookUid"]').val();
-        var cid = this.$('input[name="customerId"]').val();
-        this.model.save({bookName: bookName,author:author,publisher:publisher,isbn:isbn,price:price}, {
+        var uid = Number(this.$('input[name="uid"]').val());
+        var cid = Number(this.$('input[name="cid"]').val());
+        var lid = Number(this.$('input[name="lid"]').val());
+        this.model.save({uid: uid,cid:cid,lid:lid}, {
             success: function(model, response, options) {
-                console.log('Save successful');
-                alert('Book Added Successfully!')
+                console.log('Issue successful');
+                alert('Book Issued Successfully!')
             },
             error: function(model, xhr, options) {
                 console.log('Save error');
@@ -24,6 +25,6 @@ var AddBookView = Backbone.View.extend({
     }
 });
 
-var book = new Book();
-var addBookView = new AddBookView({model:book})
-$(document.body).append(addBookView.render().el);
+var issuedBook = new IssuedBook();
+var issueBookView = new IssueBookView({model:issuedBook})
+$(document.body).append(issueBookView.render().el);

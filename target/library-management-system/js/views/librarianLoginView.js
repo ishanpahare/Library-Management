@@ -20,7 +20,7 @@ var LibrarianLoginView = Backbone.View.extend({
                 var session_username = sessionStorage.getItem('username');
                 console.log("username for the session is: "+session_username);
                 alert('Correct Credentials');
-                location.replace("Routers.html");
+                location.replace("LibrarianView.html");
             }
             else{
                 alert('Invalid Credentials')

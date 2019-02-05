@@ -13,7 +13,10 @@ public class Customer {
     private int cid;
     private String name;
 
-    @ManyToMany
+    @ManyToMany(
+            cascade = {CascadeType.ALL},
+            fetch = FetchType.LAZY
+    )
     @JsonbTransient
     @JoinTable(name = "CUSTOMER_ISSUED",
             joinColumns = @JoinColumn(name = "CUSTOMER_ID"),

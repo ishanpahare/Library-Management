@@ -274,6 +274,10 @@ public class View {
         issuedBook.getLibrarians().add(librarian);
         librarian.getIssuedBooks().add(issuedBook);
 
+/*        issuedBook.setIssueDate(new Date());
+        Date returnDate = DateUtil.addDays(new Date(),14);
+       issuedBook.setReturnDate(returnDate);*/
+
         issuedBookDao.insertIssuedBook(issuedBook, session);
         bookDao.deleteBook(book, session);
     }

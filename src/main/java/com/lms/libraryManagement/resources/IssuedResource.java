@@ -30,7 +30,7 @@ public class IssuedResource {
         return issuedBook;
     }
 
-    @PUT
+    @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     public IssuedBook addIssuedBook(JSONObject inputJsonObject){

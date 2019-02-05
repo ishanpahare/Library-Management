@@ -1,13 +1,8 @@
 var IssuedBook = Backbone.Model.extend({
     defaults: {
-        uid: null,
-        bookName: "",
-        author: "",
-        publisher: "",
-        isbn: null,
-        price: null,
-        issueDate:"",
-        returnDate:""
+       uid:null,
+        cid:null,
+        lid:null
     },
     url: "http://localhost:8080/LMS_war/webapi/issuedBooks"
 });
