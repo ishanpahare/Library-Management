@@ -1,5 +1,7 @@
 package com.lms.libraryManagement.resources;
 
+import com.lms.libraryManagement.dto.Book;
+import com.lms.libraryManagement.dto.Customer;
 import com.lms.libraryManagement.dto.IssuedBook;
 import com.lms.libraryManagement.services.IssuedService;
 import org.json.simple.JSONObject;
@@ -7,6 +9,7 @@ import org.json.simple.JSONObject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.math.BigDecimal;
+import java.util.Collection;
 import java.util.List;
 
 @Path("/issuedBooks")
@@ -19,6 +22,18 @@ public class IssuedResource {
         IssuedService issuedService = new IssuedService();
         issuedList = issuedService.getAllBook();
         return issuedList;
+    }
+
+    @GET
+    @Path("customer/{cid}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List getIssuedCustomerList(@PathParam("cid") int cid){
+        System.out.println("INSIDE THE REST END-POINT");
+        List<IssuedBook> issuedList = null;
+        IssuedService issuedService = new IssuedService();
+        issuedList = issuedService.getAllCustomerIssued(cid);
+        return issuedList;
+
     }
 
     @GET
@@ -41,6 +56,20 @@ public class IssuedResource {
         IssuedBook issuedBook = issuedService.addIssuedBook(uid,cid,lid);
 
         return issuedBook;
+    }
+
+    @POST
+    @Path("/return")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Book returnBook(JSONObject inputJsonObject){
+        IssuedService issuedService = new IssuedService();
+        Integer uid = ((BigDecimal) inputJsonObject.get("uid")).intValue();
+        Integer cid = ((BigDecimal) inputJsonObject.get("cid")).intValue();
+        Integer lid = ((BigDecimal) inputJsonObject.get("lid")).intValue();
+        Book book = issuedService.returnBook(uid,cid,lid);
+
+        return book;
     }
 
     @DELETE

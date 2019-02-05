@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Return Book</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/backbone-min.js"></script>
+    <script src="js/models/returnBookModel.js"></script>
+</head>
+<body>
+<script type="text/template" id="return-book-tmpl">
+    <form>
+        Librarian ID: <input type="text" name="lid">
+        Customer ID: <input type="text" name="cid">
+        Book UID: <input type="text" name="uid">
+        <button type="submit">Return</button>
+    </form>
+</script>
+<script src = js/views/returnBookView.js></script>
+</body>
+</html>

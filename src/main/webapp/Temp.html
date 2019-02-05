@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Getting list of Issued Books</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/backbone-min.js"></script>
+    <script src="js/models/customerModel.js"></script>
+</head>
+<body>
+<script>
+var IssuedCustomer = Backbone.Model.extend({
+    default:{
+        cid:null,
+        customerList:[]
+    },
+
+});
+
+var IssuedCustomers = Backbone.Collection.extend({
+    model:IssuedCustomer,
+    url:"http://localhost:8080/LMS_war/webapi/issuedBooks/customer/"
+})
+
+    var customerId = 1;
+    var customerIssued = new IssuedCustomers();
+    customerIssued.fetch({
+        url: this.url+customerId,
+
+        success: function(){
+            console.log("Fetched Successfully!");
+            console.log(customerIssued);
+        }
+    });
+
+
+
+</script>
+</body>
+</html>

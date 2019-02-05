@@ -12,10 +12,20 @@
 <script type="text/template" id="customer-info-tmpl">
     <p>Name: <%= name %></p>
     <p>ID: <%= cid %></p>
-    <p>Issued Books: <%= issuedBooks %></p>
 </script>
-
 <script src="js/models/customerModel.js"></script>
 <script src="js/views/customerDetailView.js"></script>
+<h3>List Of Issued Books</h3>
+<hr>
+<script type="text/template" id="customer-issued-tmpl">
+    <p>UID: <%= uid %></p>
+    <p>Name: <%= name %></p>
+    <p>Author: <%= author %></p>
+    <p>ISBN: <%= isbn %></p>
+    <p>Price: <%= price %></p>
+    <p>Publisher <% = publisher %></p>
+</script>
+
+
 </body>
 </html>

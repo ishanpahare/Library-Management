@@ -1,7 +1,8 @@
 var Customer = Backbone.Model.extend({
     defaults:{
-        customerId:null,
-        customerName:""
+        cid:null,
+        name:"",
+        issuedBooks:[]
     },
     url:"http://localhost:8080/LMS_war/webapi/customers"
 });

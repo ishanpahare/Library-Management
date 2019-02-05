@@ -12,6 +12,8 @@ import com.lms.libraryManagement.utils.CurrentSession;
 import com.lms.libraryManagement.utils.DateUtil;
 import org.hibernate.HibernateException;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
@@ -74,6 +76,37 @@ public class IssuedService {
         return issuedBook;
     }
 
+    public Book returnBook(int uid,int cid,int lid){
+        IssuedBook issuedBook;
+        CustomerDao customerDao = new CustomerDao();
+        Customer customer;
+        LibrarianDao librarianDao = new LibrarianDao();
+        Librarian librarian;
+        BookDao bookDao = new BookDao();
+        Book book = new Book();
+
+        issuedBook = issuedBookDao.getIssuedBookById(uid,CurrentSession.getCurrentSession());
+        customer = customerDao.getCustomerById(cid,CurrentSession.getCurrentSession());
+        librarian = librarianDao.getLibrarianById(lid,CurrentSession.getCurrentSession());
+
+        librarian.getIssuedBooks().remove(issuedBook);
+        issuedBook.getLibrarians().remove(librarian);
+
+        customer.getIssuedBooks().remove(issuedBook);
+        issuedBook.getCustomers().remove(customer);
+
+        book.setName(issuedBook.getName());
+        book.setPublisher(issuedBook.getPublisher());
+        book.setAuthor(issuedBook.getAuthor());
+        book.setPrice(issuedBook.getPrice());
+        book.setIsbn(issuedBook.getIsbn());
+
+        issuedBookDao.deleteIssuedBook(issuedBook,CurrentSession.getCurrentSession());
+        bookDao.insertBook(book,CurrentSession.getCurrentSession());
+
+        return book;
+    }
+
     /*
     public Country updateCountry(Country country)
     {
@@ -88,5 +121,17 @@ public class IssuedService {
     {
         IssuedBook issuedBook = issuedBookDao.getIssuedBookById(id, CurrentSession.getCurrentSession());
         issuedBookDao.deleteIssuedBook(issuedBook,CurrentSession.getCurrentSession());
+    }
+
+    public List<IssuedBook> getAllCustomerIssued(int cid)
+    {
+        CustomerDao customerDao = new CustomerDao();
+        Customer customer = customerDao.getCustomerById(cid,CurrentSession.getCurrentSession());
+        List<IssuedBook> issuedBookCustomerList = new ArrayList<>();
+        Collection<IssuedBook> issuedBooks = customer.getIssuedBooks();
+        for(IssuedBook issuedBook : issuedBooks){
+            issuedBookCustomerList.add(issuedBook);
+        }
+        return issuedBookCustomerList;
     }
 }
