@@ -7,24 +7,30 @@
     <script src="js/underscore-min.js"></script>
     <script src="js/backbone-min.js"></script>
     <script src="js/models/bookModel.js"></script>
+    <script src="js/models/customerModel.js"></script>
+    <script src="js/models/issuedBookModel.js"></script>
 </head>
 <body>
+<div id="customer-info">
 <script type="text/template" id="customer-info-tmpl">
     <p>Name: <%= name %></p>
     <p>ID: <%= cid %></p>
 </script>
-<script src="js/models/customerModel.js"></script>
-<script src="js/views/customerDetailView.js"></script>
+</div>
+
 <h3>List Of Issued Books</h3>
 <hr>
-<script type="text/template" id="customer-issued-tmpl">
+<div id="issued-info">
+<script type="text/template" id="issued-book-details-tmpl">
     <p>UID: <%= uid %></p>
     <p>Name: <%= name %></p>
     <p>Author: <%= author %></p>
     <p>ISBN: <%= isbn %></p>
     <p>Price: <%= price %></p>
-    <p>Publisher <% = publisher %></p>
+    <p>Publisher <%= publisher %></p>
 </script>
+</div>
+<script src="js/views/customerDetailView.js"></script>
 
 
 </body>

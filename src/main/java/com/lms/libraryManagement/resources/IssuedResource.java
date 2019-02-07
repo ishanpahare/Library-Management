@@ -3,13 +3,13 @@ package com.lms.libraryManagement.resources;
 import com.lms.libraryManagement.dto.Book;
 import com.lms.libraryManagement.dto.Customer;
 import com.lms.libraryManagement.dto.IssuedBook;
+import com.lms.libraryManagement.services.CustomerService;
 import com.lms.libraryManagement.services.IssuedService;
 import org.json.simple.JSONObject;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.math.BigDecimal;
-import java.util.Collection;
 import java.util.List;
 
 @Path("/issuedBooks")
@@ -25,13 +25,12 @@ public class IssuedResource {
     }
 
     @GET
-    @Path("customer/{cid}")
+    @Path("/customers/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public List getIssuedCustomerList(@PathParam("cid") int cid){
-        System.out.println("INSIDE THE REST END-POINT");
+    public List getIssuedCustomerList(@PathParam("id") int id){
         List<IssuedBook> issuedList = null;
         IssuedService issuedService = new IssuedService();
-        issuedList = issuedService.getAllCustomerIssued(cid);
+        issuedList = issuedService.getAllCustomerIssued(id);
         return issuedList;
 
     }

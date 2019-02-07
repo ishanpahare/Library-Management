@@ -107,16 +107,6 @@ public class IssuedService {
         return book;
     }
 
-    /*
-    public Country updateCountry(Country country)
-    {
-        if(country.getId()<=0)
-            return null;
-        countryIdMap.put(country.getId(), country);
-        return country;
-
-    }
-    */
     public void deleteBook(int id)
     {
         IssuedBook issuedBook = issuedBookDao.getIssuedBookById(id, CurrentSession.getCurrentSession());
