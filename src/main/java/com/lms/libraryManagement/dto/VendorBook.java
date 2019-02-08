@@ -3,6 +3,7 @@ package com.lms.libraryManagement.dto;
 import org.hibernate.annotations.NotFound;
 import org.hibernate.annotations.NotFoundAction;
 
+import javax.json.bind.annotation.JsonbTransient;
 import javax.persistence.*;
 
 @Entity
@@ -16,7 +17,10 @@ public class VendorBook {
     private String name;
     private String author;
     private String publisher;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY,
+            cascade = CascadeType.ALL,
+            targetEntity = Vendor.class)
+    @JsonbTransient
     @NotFound(action = NotFoundAction.IGNORE)
     @JoinColumn(name = "VID")
     private Vendor vendor;

@@ -2,6 +2,7 @@ package com.lms.libraryManagement.resources;
 
 import com.lms.libraryManagement.dto.Vendor;
 import com.lms.libraryManagement.services.VendorService;
+import org.json.simple.JSONObject;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -29,11 +30,11 @@ public class VendorResource {
     }
 
     @POST
-    @Path("/{name}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Vendor addVendor(@PathParam("name") String name){
+    public Vendor addVendor(JSONObject inputJsonObject){
         VendorService vendorService = new VendorService();
+        String name = (String) inputJsonObject.get("name");
         Vendor vendor = vendorService.addVendor(name);
         return vendor;
     }

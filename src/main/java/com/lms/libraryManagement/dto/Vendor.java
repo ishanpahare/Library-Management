@@ -3,6 +3,7 @@ package com.lms.libraryManagement.dto;
 import org.hibernate.annotations.NotFound;
 import org.hibernate.annotations.NotFoundAction;
 
+import javax.json.bind.annotation.JsonbTransient;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -14,8 +15,12 @@ public class Vendor {
     private int vid;
     private String name;
 
-    @OneToMany(mappedBy = "vendor")
+    @OneToMany(mappedBy = "vendor",
+            fetch = FetchType.LAZY,
+            cascade = CascadeType.ALL,
+            targetEntity = VendorBook.class)
     @NotFound(action = NotFoundAction.IGNORE)
+    @JsonbTransient
     private Collection<VendorBook> vendorBooks = new ArrayList<VendorBook>();
 
     public Collection<VendorBook> getVendorBooks() {

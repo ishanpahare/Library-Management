@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Getting list of Issued Books</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/backbone-min.js"></script>
+    <script src="js/models/vendorModel.js"></script>
+</head>
+<body>
+<h1>List of Vendors</h1>
+<hr>
+<script type="text/template" id="vendor-info-tmpl">
+    <p>Id: <%= vid %></p>
+    <p>Name: <%= name %></p>
+</script>
+<script src="js/views/vendorListView.js"></script>
+</body>
+</html>

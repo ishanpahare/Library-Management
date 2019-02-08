@@ -3,6 +3,7 @@ var Vendor = Backbone.Model.extend({
         vid:null,
         name:""
     },
+    url:"http://localhost:8080/LMS_war/webapi/vendors"
 });
 
 var VendorCollection = Backbone.Collection.extend({

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Of Books with Vendors</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/backbone-min.js"></script>
+    <script src="js/models/vendorModel.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div id="vendor-form">
+<script type="text/template" id="vendor-form-tmpl">
+    <form>
+        ID <input type="text" name="vid">
+        <button type="submit">Get Books</button>
+    </form>
+</script>
+</div>
+<div id="book-list">
+    <script type="text/template" id="vendor-book-tmpl">
+        <p>Name: <%= name %></p>
+        <p>Author: <%= author %></p>
+        <p>ISBN: <%= isbn %></p>
+        <p>PUBLISHER: <%= publisher %></p>
+        <p>PRICE: <%= price %></p>
+</script>
+</div>
+
+</body>
+</html>
