@@ -1,9 +1,12 @@
 package com.lms.libraryManagement.resources;
 
+import com.lms.libraryManagement.dao.VendorBookDao;
+import com.lms.libraryManagement.dao.VendorDao;
 import com.lms.libraryManagement.dto.Vendor;
 import com.lms.libraryManagement.dto.VendorBook;
 import com.lms.libraryManagement.services.VendorBookService;
 import com.lms.libraryManagement.services.VendorService;
+import com.lms.libraryManagement.utils.CurrentSession;
 import org.json.simple.JSONObject;
 
 import javax.ws.rs.*;
@@ -52,6 +55,14 @@ public class VendorBookResource {
     public void deleteVendor(@PathParam("id") int id){
         VendorBookService vendorBookService = new VendorBookService();
         vendorBookService.deleteVendorBook(id);
+    }
+
+    @GET
+    @Path("/vendor/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<VendorBook> getVendorBooks(@PathParam("id") int id){
+        VendorBookService vendorBookService = new VendorBookService();
+        return vendorBookService.getVendorBookById(id);
     }
 
 }

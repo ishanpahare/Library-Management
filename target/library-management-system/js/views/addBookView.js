@@ -29,4 +29,3 @@ var AddBookView = Backbone.View.extend({
 
 var book = new Book();
 var addBookView = new AddBookView({model:book})
-$(document.body).append(addBookView.render().el);

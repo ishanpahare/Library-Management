@@ -1,10 +1,13 @@
 package com.lms.libraryManagement.services;
 
 import com.lms.libraryManagement.dao.VendorBookDao;
+import com.lms.libraryManagement.dao.VendorDao;
+import com.lms.libraryManagement.dto.Vendor;
 import com.lms.libraryManagement.dto.VendorBook;
 import com.lms.libraryManagement.utils.CurrentSession;
 import org.hibernate.HibernateException;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class VendorBookService {
@@ -57,5 +60,15 @@ public class VendorBookService {
     {
         VendorBook vendorBook = vendorBookDao.getVendorBookById(id,CurrentSession.getCurrentSession());
         vendorBookDao.deleteBook(vendorBook,CurrentSession.getCurrentSession());
+    }
+
+    public List<VendorBook> getVendorBookById(int id){
+        VendorDao vendorDao = new VendorDao();
+        List<VendorBook> vendorBooks=new ArrayList<>();
+        Vendor vendor = vendorDao.getVendorById(id, CurrentSession.getCurrentSession());
+        for(VendorBook vendorBook : vendor.getVendorBooks()){
+            vendorBooks.add(vendorBook);
+        }
+        return vendorBooks;
     }
 }
