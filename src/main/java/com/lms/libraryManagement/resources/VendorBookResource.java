@@ -36,17 +36,19 @@ public class VendorBookResource {
         return vendorBook;
     }
 
-    @POST
+    @PUT
     @Path("/order")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Book getVendorOrder(JSONObject inputJsonObject){
+    public void getVendorOrder(JSONObject inputJsonObject){
         Integer isbn = ((BigDecimal) inputJsonObject.get("isbn")).intValue();
         Integer quantity = ((BigDecimal) inputJsonObject.get("quantity")).intValue();
         Integer id = ((BigDecimal) inputJsonObject.get("id")).intValue();
+        System.out.println("ISBN :"+isbn);
+        System.out.println("Quantity :"+quantity);
+        System.out.println("id :"+id);
         VendorBookService vendorBookService = new VendorBookService();
-        Book book = vendorBookService.orderBook(id,isbn,quantity);
-        return book;
+        vendorBookService.orderBook(id,isbn,quantity);
     }
 
     @POST

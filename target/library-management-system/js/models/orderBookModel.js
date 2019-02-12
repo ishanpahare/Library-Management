@@ -1,4 +1,4 @@
-var OrderBookModel = Backbone.Model.extend({
+var OrderBook = Backbone.Model.extend({
     defaults:{
         id:null,
         isbn:null,

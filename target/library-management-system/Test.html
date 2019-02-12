@@ -10,8 +10,8 @@
 </head>
 <body>
 <script type="text/javascript">
-var orderBook = new OrderBookModel({id:1,isbn:123,quantity:5});
-orderBook.save();
+var orderBook = new OrderBook();
+orderBook.save({id:1,isbn:123,quantity:5});
 </script>
 </body>
 </html>

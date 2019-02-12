@@ -17,6 +17,7 @@ var LibrarianLoginView = Backbone.View.extend({
             var librarian_password = librarian.get('password');
             if((username === librarian_username) && (password === librarian_password)){
                 sessionStorage.setItem('username',librarian_username);
+                sessionStorage.setItem('id',lid.toString());
                 var session_username = sessionStorage.getItem('username');
                 console.log("username for the session is: "+session_username);
                 alert('Correct Credentials');

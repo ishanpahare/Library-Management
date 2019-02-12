@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Books</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/backbone-min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/models/orderBookModel.js"></script>
+    <link rel="stylesheet" href="css/form-style.css">
+</head>
+<body>
+<script type="text/template" id="order-book-tmpl">
+    <div class="container">
+        <form id="contact">
+            <fieldset>
+                <input placeholder="Vendor Id" type="text" name="vid" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Book ISBN" type="text" name="isbn" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Quantity" type="text" name="quantity" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</script>
+<script src="js/views/orderBookView.js"></script>
+</body>
+</html>
