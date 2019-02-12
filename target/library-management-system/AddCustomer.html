@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a new Customer</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/backbone-min.js"></script>
+    <script src="js/models/customerModel.js"></script>
+    <link rel="stylesheet" href="css/form-style.css">
+</head>
+<body>
+<h1 style="text-align: center">ADD CUSTOMER TO LIBRARY</h1>
+<hr>
+
+<script type="text/template" id="add-customer-tmpl">
+    <div class="container">
+        <form id="contact">
+            <fieldset>
+                <input placeholder="Customer Name" type="text" name="customerName" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</script>
+
+<script src="js/views/addCustomerView.js"></script>
+
+</body>
+</html>

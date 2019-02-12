@@ -2,6 +2,7 @@ package com.lms.libraryManagement.resources;
 
 import com.lms.libraryManagement.dao.VendorBookDao;
 import com.lms.libraryManagement.dao.VendorDao;
+import com.lms.libraryManagement.dto.Book;
 import com.lms.libraryManagement.dto.Vendor;
 import com.lms.libraryManagement.dto.VendorBook;
 import com.lms.libraryManagement.services.VendorBookService;
@@ -33,6 +34,19 @@ public class VendorBookResource {
         VendorBookService vendorBookService = new VendorBookService();
         VendorBook vendorBook = vendorBookService.getVendorBook(id);
         return vendorBook;
+    }
+
+    @POST
+    @Path("/order")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Book getVendorOrder(JSONObject inputJsonObject){
+        Integer isbn = ((BigDecimal) inputJsonObject.get("isbn")).intValue();
+        Integer quantity = ((BigDecimal) inputJsonObject.get("quantity")).intValue();
+        Integer id = ((BigDecimal) inputJsonObject.get("id")).intValue();
+        VendorBookService vendorBookService = new VendorBookService();
+        Book book = vendorBookService.orderBook(id,isbn,quantity);
+        return book;
     }
 
     @POST

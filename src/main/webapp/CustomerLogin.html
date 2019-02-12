@@ -2,17 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Routing in Backbone</title>
+    <title>Customer Login</title>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/underscore-min.js"></script>
     <script src="js/backbone-min.js"></script>
+    <link rel="stylesheet" href="css/form-style.css">
 </head>
 <body>
 <script type="text/template" id="customer-login-tmpl">
-    <form>
-        ID <input type="text" name="cid">
-        <button type="submit">Login</button>
+    <div class="container">
+    <form id="contact">
+        <fieldset>
+            <input placeholder="Customer Id" type="text" name="cid" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit">Submit</button>
+        </fieldset>
     </form>
+    </div>
 </script>
 <script src="js/models/customerModel.js"></script>
 <script src = "js/views/customerLoginView.js"></script>

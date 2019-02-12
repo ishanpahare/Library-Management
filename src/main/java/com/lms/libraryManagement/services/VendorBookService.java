@@ -1,7 +1,9 @@
 package com.lms.libraryManagement.services;
 
+import com.lms.libraryManagement.dao.BookDao;
 import com.lms.libraryManagement.dao.VendorBookDao;
 import com.lms.libraryManagement.dao.VendorDao;
+import com.lms.libraryManagement.dto.Book;
 import com.lms.libraryManagement.dto.Vendor;
 import com.lms.libraryManagement.dto.VendorBook;
 import com.lms.libraryManagement.utils.CurrentSession;
@@ -70,5 +72,27 @@ public class VendorBookService {
             vendorBooks.add(vendorBook);
         }
         return vendorBooks;
+    }
+
+    public Book orderBook(int id, int isbn, int quantity){
+        VendorDao vendorDao = new VendorDao();
+        BookDao bookDao = new BookDao();
+        Book book = new Book();
+        Vendor vendor = vendorDao.getVendorById(id,CurrentSession.getCurrentSession());
+        for(VendorBook vendorBook : vendor.getVendorBooks()){
+            if(vendorBook.getIsbn() == isbn){
+                for(int i=0;i<quantity;i++){
+                    book.setIsbn(vendorBook.getIsbn());
+                    book.setPrice(vendorBook.getPrice());
+                    book.setAuthor(vendorBook.getAuthor());
+                    book.setName(vendorBook.getName());
+                    book.setPublisher(vendorBook.getPublisher());
+
+                    bookDao.insertBook(book,CurrentSession.getCurrentSession());
+                }
+            }
+        }
+
+        return book;
     }
 }

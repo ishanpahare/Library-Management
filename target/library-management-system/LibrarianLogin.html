@@ -6,18 +6,27 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/underscore-min.js"></script>
     <script src="js/backbone-min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="css/form-style.css">
 </head>
 <body>
 
 <script type="text/template" id="librarian-login-tmpl">
-    <form>
-        Username <input type="text" name="username">
-        Password <input type="password" name="password">
-        ID <input type="text" name="lid">
-        <button type="submit">Login</button>
+    <div class="container">
+    <form id="contact">
+        <fieldset>
+            <input placeholder="Username" type="text" name="username" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Password" type="password" name="password" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Librarian Id" type="text" name="lid" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit">Submit</button>
+        </fieldset>
     </form>
+    </div>
 </script>
 <script src="js/models/librarianModel.js"></script>
 <script src = "js/views/librarianLoginView.js"></script>

@@ -7,15 +7,26 @@
     <script src="js/underscore-min.js"></script>
     <script src="js/backbone-min.js"></script>
     <script src="js/models/issuedBookModel.js"></script>
+    <link rel="stylesheet" href="css/form-style.css">
 </head>
 <body>
     <script type="text/template" id="issue-book-tmpl">
-        <form>
-            Librarian ID: <input type="text" name="lid">
-            Customer ID: <input type="text" name="cid">
-            Book UID: <input type="text" name="uid">
-            <button type="submit">Issue</button>
+        <div class="container">
+        <form id="contact">
+            <fieldset>
+                <input placeholder="Librarian Id" type="text" name="lid" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Customer Id" type="text" name="cid" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Unique Id of Book" type="text" name="uid" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit">Submit</button>
+            </fieldset>
         </form>
+        </div>
     </script>
 <script src = js/views/issueBookView.js></script>
 </body>

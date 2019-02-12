@@ -7,15 +7,21 @@
     <script src="js/underscore-min.js"></script>
     <script src="js/backbone-min.js"></script>
     <script src="js/models/vendorBookModel.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/form-style.css">
 </head>
 <body>
 <div id="vendor-form">
 <script type="text/template" id="vendor-form-tmpl">
-    <form>
-        ID <input type="text" name="vid">
-        <button type="submit">Get Books</button>
+    <div class="container">
+    <form id="contact">
+        <fieldset>
+        <input placeholder="Vendor Id" type="text" name="vid" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit">Get Books</button>
+        </fieldset>
     </form>
+    </div>
 </script>
 </div>
 <div id="book-list">

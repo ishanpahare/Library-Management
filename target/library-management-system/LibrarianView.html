@@ -2,16 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Customer View</title>
+    <title>Librarian View</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
 <h1 id ="welcomeHeading"></h1>
 <hr>
-<ul>
-    <li><a href="BookList.html">Check Books Available</a></li>
-    <li><a href="IssueBook.html">IssueBook</a></li>
-    <li><a href="ReturnBook.html">Return Book</a></li>
-    <li><a href="index.html" onclick="logout()">Logout</a></li>
+<ul class="list-group">
+    <li class="list-group-item"><a href="BookList.html">Check Books Available</a></li>
+    <li class="list-group-item"><a href="AddBook.html">Add Book</a></li>
+    <li class="list-group-item"><a href="AddCustomer.html">Add Customer</a></li>
+    <li class="list-group-item"><a href="IssueBook.html">IssueBook</a></li>
+    <li class="list-group-item"><a href="ReturnBook.html">Return Book</a></li>
+    <li class="list-group-item"><a href="VendorView.html">Vendors</a></li>
+    <li class="list-group-item"><a href="index.html" onclick="logout()">Logout</a></li>
 </ul>
 <script>
     var name = sessionStorage.getItem('username')

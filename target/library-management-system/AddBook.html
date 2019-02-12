@@ -6,39 +6,38 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/underscore-min.js"></script>
     <script src="js/backbone-min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/models/bookModel.js"></script>
+    <link rel="stylesheet" href="css/form-style.css">
 </head>
 <body>
 <h1 style="text-align: center">ADD BOOK TO LIBRARY</h1>
 <hr>
 
 <script type="text/template" id="add-book-tmpl">
-        <form class="text-center border border-light p-5">
-            <div class="form-group">
-                <label for="formInput">Name Of Book</label>
-                <input type="text" name="bookName" class="form-control mb-4" id="formInput" placeholder="Book Name">
-            </div>
-            <div class="form-group">
-                <label for="formInput2">Name Of Author</label>
-                <input type="text" name="author" class="form-control mb-4" id="formInput2" placeholder="Author">
-            </div>
-            <div class="form-group">
-                <label for="formInput3">Name Of Publisher</label>
-                <input type="text" name="publisher" class="form-control mb-4" id="formInput3" placeholder="Publisher">
-            </div>
-            <div class="form-group">
-                <label for="formInput4">ISBN of Book</label>
-                <input type="text" name="isbn" class="form-control mb-4" id="formInput4" placeholder="ISBN">
-            </div>
-            <div class="form-group">
-                <label for="formInput5">Price of Book</label>
-                <input type="text" name="price" class="form-control mb-4" id="formInput5" placeholder="Price">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="container">
+        <form id="contact">
+            <fieldset>
+                <input placeholder="Book Name" type="text" name="bookName" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Author" type="text" name="author" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Publisher" type="text" name="publisher" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="ISBN" type="text" name="isbn" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Price" type="text" name="price" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit">Submit</button>
+            </fieldset>
         </form>
+    </div>
 </script>
 
-<script src="js/models/bookModel.js"></script>
 <script src="js/views/addBookView.js"></script>
 
 </body>

@@ -33,10 +33,8 @@ public class CustomerResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Customer addCustomer(JSONObject inputJsonObject){
-        /*CustomerService customerService = new CustomerService();
-        Customer customer = customerService.addCustomer(id);
-        return customer;*/
-        String name = (String) inputJsonObject.get("customerName");
+        String name = (String) inputJsonObject.get("name");
+        System.out.println("THE NAME IS :"+name);
         CustomerService customerService = new CustomerService();
         Customer customer = customerService.addCustomer(name);
         return customer;
