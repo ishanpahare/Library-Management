@@ -1,5 +1,5 @@
 var BookView = Backbone.View.extend({
-    tagName: 'li',
+    tagName: 'tr',
     template: _.template($('#book-details').html()),
     render: function () {
         this.$el.html(this.template(this.model.toJSON()))
@@ -8,7 +8,8 @@ var BookView = Backbone.View.extend({
 });
 
 var BookListView = Backbone.View.extend({
-    tagName: 'ul',
+    // tagName: 'tbody',
+    el:'tbody',
     initialize: function () {
         this.listenTo(this.collection, 'sync change', this.render);
         this.collection.fetch();
@@ -27,4 +28,4 @@ var BookListView = Backbone.View.extend({
 
 var bookList = new BooksCollection();
 var bookListView = new BookListView({collection: bookList})
-$(document.body).append(bookListView.render().el);
+$(document.getElementById("book-table")).append(bookListView.render().el);

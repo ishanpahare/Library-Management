@@ -6,25 +6,23 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/underscore-min.js"></script>
     <script src="js/backbone-min.js"></script>
-    <script src="js/utils.js"></script>
     <script src="js/models/vendorBookModel.js"></script>
-    <link rel="stylesheet" href="css/form-style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+<h1>Vendor Inventory</h1>
+<hr>
 <div id="vendor-form">
-<script type="text/template" id="vendor-form-tmpl">
-    <div class="container">
-    <form id="contact">
-        <fieldset>
-        <input placeholder="Vendor Id" type="text" name="vid" tabindex="1" required autofocus>
-        </fieldset>
-        <fieldset>
-            <button name="submit" type="submit" id="contact-submit">Get Books</button>
-        </fieldset>
-    </form>
-    </div>
-</script>
+    <script type="text/template" id="vendor-form-tmpl">
+        <form>
+            <div class="form-group">
+                <input placeholder="Vendor Id" type="text" name="vid" tabindex="1" required autofocus>
+                <button class="btn btn-primary" name="submit" type="submit">Get Books</button>
+            </div>
+        </form>
+    </script>
 </div>
+<hr>
 <div id="book-list">
     <script type="text/template" id="vendor-book-tmpl">
         <p>Name: <%= name %></p>
@@ -32,7 +30,7 @@
         <p>ISBN: <%= isbn %></p>
         <p>PUBLISHER: <%= publisher %></p>
         <p>PRICE: <%= price %></p>
-</script>
+    </script>
 </div>
 <script src="js/views/VendorBookListView.js"></script>
 </body>

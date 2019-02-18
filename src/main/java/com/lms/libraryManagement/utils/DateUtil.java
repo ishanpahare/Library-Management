@@ -8,11 +8,11 @@ import java.util.concurrent.TimeUnit;
 
 public class DateUtil {
 
-    public static Date addDays(Date date, int days) {
+    public static String addDays(Date date, int days) {
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
         cal.add(Calendar.DATE, days);
-        return cal.getTime();
+        return cal.getTime().toString();
     }
 
     public static long differenceInDays(Date startDate, Date endDate) {

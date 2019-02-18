@@ -15,7 +15,6 @@ import org.hibernate.Session;
 public class App {
     public static void main(String[] args) {
 
-
         MainView mv = new MainView();
         LibrarianDao librarianDao = new LibrarianDao();
         VendorDao vendorDao = new VendorDao();
