@@ -6,29 +6,64 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/underscore-min.js"></script>
     <script src="js/backbone-min.js"></script>
-    <link rel="stylesheet" href="css/form-style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Library Management System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="CustomerLogin.html">Customer Login</a>
+            <a class="nav-item nav-link active" href="LibrarianLogin.html">Librarian Login</a>
+        </div>
+    </div>
+</nav>
 <script type="text/template" id="librarian-login-tmpl">
-    <div class="container">
-    <form id="contact">
-        <fieldset>
-            <input placeholder="Username" type="text" name="username" tabindex="1" required autofocus>
-        </fieldset>
-        <fieldset>
-            <input placeholder="Password" type="password" name="password" tabindex="1" required autofocus>
-        </fieldset>
-        <fieldset>
-            <input placeholder="Librarian Id" type="text" name="lid" tabindex="1" required autofocus>
-        </fieldset>
-        <fieldset>
-            <button name="submit" type="submit" id="contact-submit">Submit</button>
-        </fieldset>
-    </form>
+
+    <div class="row">
+        <div class="col-md-4 col-centered"></div>
+        <div class="col-md-4 col-centered">
+            <br>
+            <br>
+            <br>
+            <br>
+            <form>
+                <div class="form-group">
+                    <label for="InputUsername">Username</label>
+                    <input class="form-control" placeholder="Username" id="inputUsername" type="text" name="username"
+                           tabindex="1" required autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="InputPassword">Password</label>
+                    <input class="form-control" placeholder="Password" type="password" id="InputPassword"
+                           name="password" tabindex="1" required autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="InputLID">Librarian Id</label>
+                    <input class="form-control" placeholder="Librarian Id" id="InputLID" type="text" name="lid"
+                           tabindex="1" required autofocus>
+                </div>
+                <button name="submit" type="submit" id="contact-submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </div>
 </script>
 <script src="js/models/librarianModel.js"></script>
-<script src = "js/views/librarianLoginView.js"></script>
+<script src="js/views/librarianLoginView.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
 </body>
 </html>

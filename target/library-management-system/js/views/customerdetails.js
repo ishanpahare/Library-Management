@@ -1,7 +1,6 @@
 var CustomerView = Backbone.View.extend({
-    tagName: 'li',
+    tagName: 'tr',
     template: _.template($('#customer-details').html()),
-
     render: function () {
         this.$el.html(this.template(this.model.toJSON()))
         return this;
@@ -9,7 +8,7 @@ var CustomerView = Backbone.View.extend({
 });
 
 var CustomerListView = Backbone.View.extend({
-    tagName: 'ul',
+    el:'tbody',
     initialize: function () {
         this.listenTo(this.collection, 'sync change', this.render);
         this.collection.fetch();
@@ -28,4 +27,4 @@ var CustomerListView = Backbone.View.extend({
 
 var customers = new CustomerCollection();
 var customersView = new CustomerListView({collection: customers});
-$(document.body).append(customersView.render().el);
+$(document.getElementById("customer-table")).append(customersView.render().el);

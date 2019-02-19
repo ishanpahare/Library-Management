@@ -62,8 +62,8 @@ public class IssuedService {
         issuedBook.setPrice(price);
         String publisher = book.getPublisher();
         issuedBook.setPublisher(publisher);
-        //issuedBook.setIssueDate(new Date());
-        //issuedBook.setReturnDate(DateUtil.addDays(new Date(),14));
+        issuedBook.setIssueDate(new Date().toString());
+        issuedBook.setReturnDate(DateUtil.addDays(new Date(),14));
 
         issuedBook.getCustomers().add(customer);
         customer.getIssuedBooks().add(issuedBook);

@@ -38,7 +38,7 @@ public class App {
         Vendor v5 = new Vendor();
         v5.setName("vendor 5");
 
-        VendorBook vendorBook = new VendorBook();
+       /* VendorBook vendorBook = new VendorBook();
         vendorBook.setName("Vendor Book 1");
         vendorBook.setAuthor("Sample Author");
         vendorBook.setIsbn(123);
@@ -49,18 +49,17 @@ public class App {
         vendorBook.setVendor(v1);
 
         vendorDao.insertVendor(v1,session);
-        vendorBookDao.insertVendorBook(vendorBook,session);
+        vendorBookDao.insertVendorBook(vendorBook,session);*/
 
-        mv.getMainView(mv,session);
 
-     /*   Librarian librarian2 = new Librarian();
+        Librarian librarian2 = new Librarian();
         Librarian librarian3 = new Librarian();
         Librarian librarian4 = new Librarian();
         Librarian librarian5 = new Librarian();
-*/
+
         //Run Once to add Books to DB
 
-        /*Adding books to list of vendors
+        //Adding books to list of vendors
         Vendor v1 = new Vendor();
         v1.setName("vendor 1");
         Vendor v2 = new Vendor();
@@ -73,15 +72,15 @@ public class App {
         v5.setName("vendor 5");
 
         VendorUtil.addBook(v1, session);
-        //VendorUtil.addBook(v2, session);
-        //VendorUtil.addBook(v3, session);
-        //VendorUtil.addBook(v4, session);
-        //VendorUtil.addBook(v5, session); */
+        VendorUtil.addBook(v2, session);
+        VendorUtil.addBook(v3, session);
+        VendorUtil.addBook(v4, session);
+        VendorUtil.addBook(v5, session);
 
 
 
 
-/*
+
         librarian2.setUsername("lib2");
         librarian2.setPassword("password");
         librarianDao.insertLibrarian(librarian2, session);
@@ -98,7 +97,7 @@ public class App {
         librarian5.setPassword("password");
         librarianDao.insertLibrarian(librarian5, session);
 
-*/
 
+        mv.getMainView(mv,session);
     }
 }

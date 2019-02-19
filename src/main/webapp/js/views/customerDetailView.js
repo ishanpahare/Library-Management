@@ -1,3 +1,4 @@
+/*
 var CustomerDetailView = Backbone.View.extend({
     template: _.template($('#customer-info-tmpl').html()),
     render: function () {
@@ -5,8 +6,10 @@ var CustomerDetailView = Backbone.View.extend({
         return this;
     }
 })
+*/
 
 var cid = Number(sessionStorage.getItem('id'));
+/*
 var customers = new CustomerCollection();
 customers.fetch().then(function () {
     var customer = customers.findWhere({'cid':cid});
@@ -14,9 +17,10 @@ customers.fetch().then(function () {
     var customerDetailsView = new CustomerDetailView({model:customer});
     $(document.getElementById("customer-info")).append(customerDetailsView.render().el);
 })
+*/
 
 var IssuedView = Backbone.View.extend({
-    tagName: 'li',
+    tagName: 'tr',
     template: _.template($('#issued-book-details-tmpl').html()),
     render: function () {
         this.$el.html(this.template(this.model.toJSON()));
@@ -25,7 +29,7 @@ var IssuedView = Backbone.View.extend({
 });
 
 var IssuedListView = Backbone.View.extend({
-    tagName: 'ul',
+    el:'tbody',
     initialize: function () {
         console.log("collection view initialized!");
         this.listenTo(this.collection, 'sync change', this.render);
@@ -44,6 +48,8 @@ var IssuedListView = Backbone.View.extend({
     }
 });
 
+
 var issuedList = new IssuedCustomerCollection([],{id:cid});
 var issuedListView = new IssuedListView({collection: issuedList});
-$(document.getElementById("issued-info")).append(issuedListView.render().el);
+$(document.getElementById("issued-info-table")).append(issuedListView.render().el);
+

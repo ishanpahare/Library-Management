@@ -1,5 +1,5 @@
 var VendorView = Backbone.View.extend({
-    tagName:'li',
+    tagName:'tr',
     template: _.template($('#vendor-info-tmpl').html()),
     render: function () {
         this.$el.html(this.template(this.model.toJSON()))
@@ -8,7 +8,7 @@ var VendorView = Backbone.View.extend({
 });
 
 var VendorListView = Backbone.View.extend({
-    tagName: 'ul',
+    el:'tbody',
     initialize: function () {
         this.listenTo(this.collection, 'sync change', this.render);
         this.collection.fetch();
@@ -27,4 +27,4 @@ var VendorListView = Backbone.View.extend({
 
 var vendorList = new VendorCollection();
 var vendorListView = new VendorListView({collection: vendorList})
-$(document.body).append(vendorListView.render().el);
+$(document.getElementById("vendor-table")).append(vendorListView.render().el);

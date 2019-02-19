@@ -7,46 +7,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f80c74fd-84a9-41b8-be7c-2aeeba1c75ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/IssuedList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/libraryUtil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/views/issuedListView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/utils/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/utils/DateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/dto/IssuedBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/dto/IssuedBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/services/IssuedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/services/IssuedService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/AddBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/AddBook.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/AddCustomer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/AddCustomer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/BookList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/BookList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/CustomerInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CustomerInfo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/CustomerList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CustomerList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/CustomerLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CustomerLogin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/CustomerView.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CustomerView.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/IssueBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/IssueBook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/LibrarianLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/LibrarianLogin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/LibrarianView.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/LibrarianView.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/OrderBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/OrderBook.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/ReturnBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ReturnBook.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/VendorInventory.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/VendorInventory.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/VendorList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/VendorList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/VendorView.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/VendorView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/models/issuedBookModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/models/issuedBookModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/views/VendorBookListView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/views/VendorBookListView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/views/bookdetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/views/bookdetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lms/libraryManagement/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lms/libraryManagement/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lms/libraryManagement/resources/VendorBookResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lms/libraryManagement/resources/VendorBookResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lms/libraryManagement/services/VendorBookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lms/libraryManagement/services/VendorBookService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lms/libraryManagement/utils/DateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lms/libraryManagement/utils/DateUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library-management-system.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/views/customerDetailView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/views/customerDetailView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/views/customerdetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/views/customerdetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/views/vendorListView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/views/vendorListView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lms/libraryManagement/dto/IssuedBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lms/libraryManagement/dto/IssuedBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lms/libraryManagement/services/IssuedService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lms/libraryManagement/services/IssuedService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-management-system.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/library-management-system/AddBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/AddBook.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/library-management-system/AddCustomer.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/AddCustomer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/library-management-system/BookList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/BookList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/library-management-system/CustomerInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/CustomerInfo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/library-management-system/CustomerList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/CustomerList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-management-system/CustomerLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/CustomerLogin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/library-management-system/CustomerView.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/CustomerView.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/library-management-system/IssueBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/IssueBook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-management-system/LibrarianLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/LibrarianLogin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/library-management-system/LibrarianView.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/LibrarianView.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/library-management-system/OrderBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/OrderBook.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/library-management-system/ReturnBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/ReturnBook.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/library-management-system/VendorInventory.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/VendorInventory.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/library-management-system/VendorList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/VendorList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/library-management-system/VendorView.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/VendorView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library-management-system/WEB-INF/classes/com/lms/libraryManagement/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/WEB-INF/classes/com/lms/libraryManagement/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library-management-system/WEB-INF/classes/com/lms/libraryManagement/resources/VendorBookResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/WEB-INF/classes/com/lms/libraryManagement/resources/VendorBookResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library-management-system/WEB-INF/classes/com/lms/libraryManagement/services/VendorBookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/WEB-INF/classes/com/lms/libraryManagement/services/VendorBookService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library-management-system/WEB-INF/classes/com/lms/libraryManagement/utils/DateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/WEB-INF/classes/com/lms/libraryManagement/utils/DateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-management-system/WEB-INF/classes/com/lms/libraryManagement/dto/IssuedBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/WEB-INF/classes/com/lms/libraryManagement/dto/IssuedBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-management-system/WEB-INF/classes/com/lms/libraryManagement/services/IssuedService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/WEB-INF/classes/com/lms/libraryManagement/services/IssuedService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-management-system/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-management-system/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-management-system/js/models/issuedBookModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/js/models/issuedBookModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-management-system/js/views/VendorBookListView.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/js/views/VendorBookListView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/library-management-system/js/views/bookdetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/js/views/bookdetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-management-system/js/views/customerDetailView.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/js/views/customerDetailView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-management-system/js/views/customerdetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/js/views/customerdetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-management-system/js/views/vendorListView.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-management-system/js/views/vendorListView.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -87,20 +106,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/views/bookdetails.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/BookList.html">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+            <state relative-caret-position="20">
+              <caret line="51" column="61" selection-start-line="40" selection-start-column="7" selection-end-line="51" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -129,30 +139,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/IssueBookView.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/views/issueBookView.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/models/customerModel.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/models/returnBookModel.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/views/returnBookView.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/models/issuedCustomerModel.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/resources/IssuedResource.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/models/issuedBookModel.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/views/customerDetailView.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/dto/Vendor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/dto/VendorBook.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/models/vendorModel.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/resources/VendorResource.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/views/vendorListView.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/Temp.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/views/VendorBookListView.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/models/vendorBookModel.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/models/orderBook.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/views/addBookView.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/views/addCustomer.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/views/addCustomerView.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/resources/CustomerResource.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/CustomerLogin.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/LibrarianLogin.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/form-style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/models/orderBookModel.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/Test.html" />
@@ -161,25 +159,37 @@
         <option value="$PROJECT_DIR$/src/main/webapp/js/views/orderBookView.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/views/librarianLoginView.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/utils.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/LibrarianView.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/OrderBook.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/ReturnBook.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/utils/DateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/views/customerdetails.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/views/bookdetails.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/libraryUtil.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/views/vendorListView.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/VendorView.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/VendorList.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/IssueBook.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/CustomerView.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/CustomerList.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/CustomerInfo.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/AddCustomer.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/AddBook.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/utils/DateUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/services/IssuedService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/CustomerLogin.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/LibrarianLogin.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/dto/IssuedBook.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/services/IssuedService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/VendorInventory.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/views/issueBookView.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/CustomerView.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/models/issuedBookModel.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/views/customerDetailView.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/views/issuedListView.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/IssuedList.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/AddBook.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/AddCustomer.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/IssueBook.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/OrderBook.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/ReturnBook.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/VendorList.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/BookList.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/views/bookdetails.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/views/VendorBookListView.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/VendorInventory.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/LibrarianView.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/App.java" />
       </list>
     </option>
   </component>
@@ -208,6 +218,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -326,18 +337,35 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550056183835" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550586097025" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -511,22 +539,23 @@
       <workItem from="1550054308610" duration="1926000" />
       <workItem from="1550056480024" duration="676000" />
       <workItem from="1550064675142" duration="1079000" />
-      <workItem from="1550466005503" duration="18502000" />
+      <workItem from="1550466005503" duration="25142000" />
+      <workItem from="1550552641079" duration="28862000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="331835000" />
+    <option name="totallyTimeSpent" value="367337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Learn" order="0" sideWeight="0.4961637" weight="0.32980332" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49360615" visible="true" weight="0.25416037" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4910486" visible="true" weight="0.25718608" />
       <window_info id="Designer" order="2" />
       <window_info id="Structure" order="3" sideWeight="0.50383633" side_tool="true" weight="0.32980332" />
-      <window_info id="Persistence" order="4" sideWeight="0.50639385" side_tool="true" weight="0.33509833" />
+      <window_info id="Persistence" order="4" sideWeight="0.5089514" side_tool="true" weight="0.25718608" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="UI Designer" order="7" />
@@ -545,7 +574,7 @@
       <window_info anchor="bottom" id="Debug" order="11" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Run" order="14" sideWeight="0.4977307" visible="true" weight="0.36006546" />
+      <window_info anchor="bottom" id="Run" order="14" sideWeight="0.4977307" visible="true" weight="0.36006546" />
       <window_info anchor="bottom" id="TODO" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -564,55 +593,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/models/vendorModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/views/vendorListView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/services/VendorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-524">
-          <caret line="12" selection-start-line="12" selection-end-line="57" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/services/BookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="32" column="85" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/resources/BookResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/dao/VendorBookDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/views/VendorBookListView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/dto/VendorBook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -624,13 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/models/customerModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -671,24 +644,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/views/addBookView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" lean-forward="true" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/models/orderBookModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/models/vendorBookModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -709,24 +668,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/views/customerDetailView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/views/librarianLoginView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/views/customerLoginView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -737,180 +682,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/LibrarianView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrderBook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ReturnBook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/Test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/VendorView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/VendorList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/LibrarianLogin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/IssueBook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/CustomerView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/CustomerLogin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="19" selection-start-line="17" selection-start-column="7" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/CustomerList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/CustomerInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/AddCustomer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/AddBook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/dto/IssuedBook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
-            <element signature="e#1572#1573#0" expanded="true" />
-            <element signature="e#2201#2202#0" expanded="true" />
-            <element signature="e#2233#2234#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/dao/IssuedBookDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/utils/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/resources/IssuedResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/models/issuedBookModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/services/IssuedService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/VendorInventory.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -928,17 +703,286 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/views/customerLoginView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/views/bookdetails.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        <state relative-caret-position="-116">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/views/customerdetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-235">
+          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/views/vendorListView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VendorView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/CustomerList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="59" column="4" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/CustomerLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/utils/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/services/IssuedService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/dao/IssuedBookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/CustomerInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="15" selection-start-line="15" selection-end-line="80" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/dto/IssuedBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1540#1541#0" expanded="true" />
+            <element signature="e#1572#1573#0" expanded="true" />
+            <element signature="e#1716#1717#0" expanded="true" />
+            <element signature="e#1748#1749#0" expanded="true" />
+            <element signature="e#1791#1792#0" expanded="true" />
+            <element signature="e#1828#1829#0" expanded="true" />
+            <element signature="e#1864#1865#0" expanded="true" />
+            <element signature="e#1897#1898#0" expanded="true" />
+            <element signature="e#1947#1948#0" expanded="true" />
+            <element signature="e#1991#1992#0" expanded="true" />
+            <element signature="e#2201#2202#0" expanded="true" />
+            <element signature="e#2233#2234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/views/issueBookView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/models/customerModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/resources/IssuedResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/models/issuedBookModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/views/issuedListView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="85" selection-start-line="31" selection-start-column="85" selection-end-line="31" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/IssuedList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/views/customerDetailView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/CustomerView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/libraryUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/IssueBook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="55" column="77" lean-forward="true" selection-start-line="55" selection-start-column="77" selection-end-line="55" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/LibrarianLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrderBook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ReturnBook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VendorList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/AddCustomer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-912">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/AddBook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1292">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/views/addBookView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-218">
+          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/BookList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        <state relative-caret-position="139">
+          <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/models/vendorBookModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/views/VendorBookListView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/LibrarianView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VendorInventory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lms/libraryManagement/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="51" column="61" selection-start-line="40" selection-start-column="7" selection-end-line="51" selection-end-column="61" />
         </state>
       </provider>
     </entry>

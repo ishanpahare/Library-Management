@@ -20,7 +20,9 @@ var IssuedBookCustomer = Backbone.Model.extend({
         publisher: "",
         isbn: null,
         price:null,
-        cid:null
+        cid:null,
+        issueDate:"",
+        returnDate:""
     },
 });
 
@@ -33,5 +35,26 @@ var IssuedCustomerCollection = Backbone.Collection.extend({
     },
     model: IssuedBookCustomer
 });
+
+var AllIssuedBook = Backbone.Model.extend({
+    defaults: {
+        uid: null,
+        name: "",
+        author: "",
+        publisher: "",
+        isbn: null,
+        price:null,
+        cid:null,
+        issueDate:"",
+        returnDate:""
+    },
+})
+
+var AllIssuedBookCollection = Backbone.Collection.extend({
+    url: function () {
+            return 'http://localhost:8080/LMS_war/webapi/issuedBooks/';
+    },
+    model: AllIssuedBook
+})
 
 

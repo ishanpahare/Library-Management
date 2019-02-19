@@ -8,9 +8,7 @@ var GetVendorIdView = Backbone.View.extend({
         e.preventDefault();
         var vid = Number(this.$('input[name="vid"]').val());
         console.log('id that i got from the form'+vid);
-        var vendorBookList = new VendorBookWithVendorCollection([], {id: vid});
-        var vendorBookByIdListView = new VendorBookByIdListView({collection: vendorBookList});
-        $(document.getElementById("book-list")).append(vendorBookByIdListView.render().el);
+        sessionStorage.setItem('Vid',vid.toString());
     },
 
     render: function() {
@@ -19,8 +17,17 @@ var GetVendorIdView = Backbone.View.extend({
     }
 });
 
+var GetVendorTableView = Backbone.View.extend({
+    template: _.template($('#vendor-table-tmpl').html()),
+
+    render: function() {
+        this.$el.html(this.template);
+        return this;
+    }
+});
+
 var VendorBookByIdView = Backbone.View.extend({
-    tagName: 'li',
+    tagName: 'tr',
     template: _.template($('#vendor-book-tmpl').html()),
     render: function () {
         this.$el.html(this.template(this.model.toJSON()));
@@ -29,7 +36,7 @@ var VendorBookByIdView = Backbone.View.extend({
 });
 
 var VendorBookByIdListView = Backbone.View.extend({
-    tagName: 'ul',
+    el:'tbody',
     initialize: function () {
         console.log("collection view initialized!");
         this.listenTo(this.collection, 'sync change', this.render);
@@ -39,7 +46,6 @@ var VendorBookByIdListView = Backbone.View.extend({
 
     render: function () {
         this.collection.each(function (vendorBook) {
-            console.log('inside the loop of collections');
             var vendorBookByIdView = new VendorBookByIdView({model: vendorBook});
             console.log(vendorBook);
             this.$el.append(vendorBookByIdView.render().el)
@@ -49,5 +55,12 @@ var VendorBookByIdListView = Backbone.View.extend({
 });
 
 var getVendorBookView = new GetVendorIdView();
-$(document.getElementById("vendor-form")).append(getVendorBookView.render().el);
+$(document.body).append(getVendorBookView.render().el);
 
+var getVendorTableView = new GetVendorTableView();
+$(document.body).append(getVendorTableView.render().el);
+
+var vid = sessionStorage.getItem('Vid');
+var vendorBookList = new VendorBookWithVendorCollection([], {id: vid});
+var vendorBookByIdListView = new VendorBookByIdListView({collection: vendorBookList});
+$(document.getElementById("vendor-book-table")).append(vendorBookByIdListView.render().el);

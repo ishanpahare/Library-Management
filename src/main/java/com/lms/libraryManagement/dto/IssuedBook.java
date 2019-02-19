@@ -23,10 +23,10 @@ public class IssuedBook{
     private String author;
     private String publisher;
 
-/*   @Temporal(TemporalType.DATE)
-    private Date issueDate;
-    @Temporal(TemporalType.DATE)
-    private Date returnDate;*/
+    //@Temporal(TemporalType.DATE)
+    private String issueDate;
+    //@Temporal(TemporalType.DATE)
+    private String returnDate;
 
     @ManyToMany(mappedBy = "issuedBooks",
     targetEntity = Customer.class,
@@ -60,22 +60,22 @@ public class IssuedBook{
         this.customers = customers;
     }
 
-/*   public Date getIssueDate() {
+   public String getIssueDate() {
         return issueDate;
     }
 
-    public void setIssueDate(Date date) {
+    public void setIssueDate(String date) {
         this.issueDate = date;
     }
 
 
-    public Date getReturnDate() {
+    public String getReturnDate() {
         return returnDate;
     }
 
-    public void setReturnDate(Date returnDate) {
+    public void setReturnDate(String returnDate) {
         this.returnDate = returnDate;
-    }*/
+    }
 
 
     public int getUid() {

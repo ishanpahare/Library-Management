@@ -2,29 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Customer View</title>
+    <title>Customer Details</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/backbone-min.js"></script>
+    <script src="js/models/bookModel.js"></script>
+    <script src="js/models/customerModel.js"></script>
+    <script src="js/models/issuedBookModel.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/libraryUtil.js"></script>
 </head>
 <body>
-<h1 id ="welcomeHeading"></h1>
-<hr>
-<ul class="list-group">
-    <li class="list-group-item"><a href="BookList.html">Check Books Available</a></li>
-    <li class="list-group-item"><a href="CustomerInfo.html">Your Details</a></li>
-    <li class="list-group-item"><a href="index.html" onclick="logout()">Logout</a></li>
-</ul>
-<script>
-    var name = sessionStorage.getItem('username')
-    if (name === null){
-        location.replace("index.html");
-    }
-    var message = 'Welcome '+name;
-    document.getElementById("welcomeHeading").innerHTML=message;
-    function logout() {
-        sessionStorage.clear();
-        location.replace('index.html')
-    }
+<!--<div id="customer-info">
+<script type="text/template" id="customer-info-tmpl">
+    <p>Name: <%= name %></p>
+    <p>ID: <%= cid %></p>
 </script>
-<div id="customer-detail-tmpl"></div>
+</div>-->
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Library Management</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="CustomerView.html">Issued Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="BookList.html">Book List</a>
+                </li>
+            </ul>
+            <button class="btn btn-outline-danger my-2 my-sm-0" onclick="logout()">Logout</button>
+        </div>
+    </nav>
+</header>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+    <h1>List of Issued Books</h1>
+    <table class="table table-bordered" id="issued-info-table">
+        <thead class="thead-dark" id="customer-table-head">
+        <tr>
+            <th>Unique ID</th>
+            <th>Name</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th>Price</th>
+            <th>Publisher</th>
+            <th>Issue Date</th>
+            <th>Return Date</th>
+        </tr>
+        </thead>
+        <tbody id="customer-table-body"></tbody>
+    </table>
+</div>
+<script type="text/template" id="issued-book-details-tmpl">
+    <td><%= uid %></td>
+    <td><%= name %></td>
+    <td><%= author %></td>
+    <td><%= isbn %></td>
+    <td><%= price %></td>
+    <td><%= publisher %></td>
+    <td><%= issueDate %></td>
+    <td><%= returnDate %></td>
+</script>
+</div>
+<script src="js/views/customerDetailView.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>

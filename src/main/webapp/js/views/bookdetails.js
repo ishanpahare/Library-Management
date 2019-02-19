@@ -8,7 +8,6 @@ var BookView = Backbone.View.extend({
 });
 
 var BookListView = Backbone.View.extend({
-    // tagName: 'tbody',
     el:'tbody',
     initialize: function () {
         this.listenTo(this.collection, 'sync change', this.render);

@@ -6,22 +6,44 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/underscore-min.js"></script>
     <script src="js/backbone-min.js"></script>
-    <link rel="stylesheet" href="css/form-style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Library Management System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="CustomerLogin.html">Customer Login</a>
+            <a class="nav-item nav-link" href="LibrarianLogin.html">Librarian Login</a>
+        </div>
+    </div>
+</nav>
 <script type="text/template" id="customer-login-tmpl">
-    <div class="container">
-    <form id="contact">
-        <fieldset>
-            <input placeholder="Customer Id" type="text" name="cid" tabindex="1" required autofocus>
-        </fieldset>
-        <fieldset>
-            <button name="submit" type="submit" id="contact-submit">Submit</button>
-        </fieldset>
-    </form>
+
+    <div class="row">
+        <div class="col-md-4 col-centered"></div>
+        <div class="col-md-4 col-centered">
+            <br>
+            <br>
+            <br>
+            <br>
+        <form>
+            <div class="form-group">
+                <label for="InputCID">Customer Id</label>
+                <input class = "form-control" id="inputCID" placeholder="Customer Id" aria-describedby="emailHelp" placeholder="Customer Id" type="text" name="cid" tabindex="1" required autofocus>
+            </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div>
+    </div>
     </div>
 </script>
 <script src="js/models/customerModel.js"></script>
-<script src = "js/views/customerLoginView.js"></script>
+<script src="js/views/customerLoginView.js"></script>
 </body>
 </html>

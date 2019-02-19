@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Issued Books</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/backbone-min.js"></script>
+    <script src="js/models/issuedBookModel.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/libraryUtil.js"></script>
+</head>
+<body>
+<!--<div id="customer-info">
+<script type="text/template" id="customer-info-tmpl">
+    <p>Name: <%= name %></p>
+    <p>ID: <%= cid %></p>
+</script>
+</div>-->
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Library Management</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="LibrarianView.html">Book List</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="IssuedList.html">Issued Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CustomerList.html">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="AddBook.html">Add Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="AddCustomer.html">Add Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="IssueBook.html">Issue Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ReturnBook.html">Return Book</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Vendor
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="VendorList.html">List of vendors</a>
+                        <a class="dropdown-item" href="VendorInventory.html">Vendor Inventory</a>
+                        <a class="dropdown-item" href="OrderBook.html">Order Books</a>
+                    </div>
+                </li>
+            </ul>
+            <button class="btn btn-outline-danger my-2 my-sm-0" onclick="logout()">Logout</button>
+        </div>
+    </nav>
+</header>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+    <h1>List of Issued Books</h1>
+    <table class="table table-bordered" id="all-issued-table">
+        <thead class="thead-dark" id="customer-table-head">
+        <tr>
+            <th>Unique ID</th>
+            <th>Name</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th>Price</th>
+            <th>Publisher</th>
+            <th>Issue Date</th>
+            <th>Return Date</th>
+        </tr>
+        </thead>
+        <tbody id="customer-table-body"></tbody>
+    </table>
+</div>
+<script type="text/template" id="issued-books-details-tmpl">
+    <td><%= uid %></td>
+    <td><%= name %></td>
+    <td><%= author %></td>
+    <td><%= isbn %></td>
+    <td><%= price %></td>
+    <td><%= publisher %></td>
+    <td><%= issueDate %></td>
+    <td><%= returnDate %></td>
+</script>
+</div>
+<script src="js/views/issuedListView.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
