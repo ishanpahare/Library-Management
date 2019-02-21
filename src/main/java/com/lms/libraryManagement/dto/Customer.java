@@ -12,6 +12,9 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int cid;
     private String name;
+    private String email;
+    private String dob;
+    private String doj;
 
     @ManyToMany(
             cascade = {CascadeType.ALL},
@@ -45,6 +48,31 @@ public class Customer {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getDob() {
+        return dob;
+    }
+
+    public void setDob(String dob) {
+        this.dob = dob;
+    }
+
+
+    public String getDoj() {
+        return doj;
+    }
+
+    public void setDoj(String doj) {
+        this.doj = doj;
     }
 
 }

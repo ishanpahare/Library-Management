@@ -20,13 +20,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="CustomerView.html">Issued Books</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="BookList.html">Book List</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CustomerInfo.html">Your Details</a>
+                </li>
             </ul>
+            <span class="navbar-text" id="user-name"></span>
+            <span class="navbar-text">&nbsp;&nbsp;</span>
             <button class="btn btn-outline-danger my-2 my-sm-0" onclick="logout()">Logout</button>
         </div>
     </nav>
@@ -67,5 +72,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script src="js/userDetailDisplay.js"></script>
 </body>
 </html>

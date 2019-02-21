@@ -7,6 +7,7 @@
     <script src="js/underscore-min.js"></script>
     <script src="js/backbone-min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/libraryUtil.js"></script>
 </head>
 <body>
 <header>
@@ -22,7 +23,7 @@
                     <a class="nav-link" href="LibrarianView.html">Book List</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Issued Books</a>
+                    <a class="nav-link" href="IssuedList.html">Issued Books</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="CustomerList.html">Customers</a>
@@ -51,6 +52,8 @@
                     </div>
                 </li>
             </ul>
+            <span class="navbar-text" id="user-name"></span>
+            <span class="navbar-text">&nbsp;&nbsp;</span>
             <button class="btn btn-outline-danger my-2 my-sm-0" onclick="logout()">Logout</button>
         </div>
     </nav>
@@ -66,6 +69,9 @@
         <tr>
             <th>CID</th>
             <th>Name</th>
+            <th>Email</th>
+            <th>Date of Birth</th>
+            <th>Date of Joining</th>
         </tr>
         </thead>
         <tbody id="customer-table-body"></tbody>
@@ -75,6 +81,9 @@
 <script type="text/template" id="customer-details">
     <td><%= cid %></td>
     <td><%= name %></td>
+    <td><%= email %></td>
+    <td><%= dob %></td>
+    <td><%= doj %></td>
 </script>
 
 <script src="js/models/customerModel.js"></script>
@@ -88,6 +97,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+<script src="js/userDetailDisplay.js"></script>
 </body>
 </html>

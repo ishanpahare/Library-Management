@@ -27,7 +27,7 @@ public class App {
         librarian1.setPassword("password");
         librarianDao.insertLibrarian(librarian1, session);
 
-        Vendor v1 = new Vendor();
+/*        Vendor v1 = new Vendor();
         v1.setName("vendor 1");
         Vendor v2 = new Vendor();
         v2.setName("vendor 2");
@@ -36,7 +36,7 @@ public class App {
         Vendor v4 = new Vendor();
         v4.setName("vendor 4");
         Vendor v5 = new Vendor();
-        v5.setName("vendor 5");
+        v5.setName("vendor 5");*/
 
        /* VendorBook vendorBook = new VendorBook();
         vendorBook.setName("Vendor Book 1");
@@ -76,8 +76,6 @@ public class App {
         VendorUtil.addBook(v3, session);
         VendorUtil.addBook(v4, session);
         VendorUtil.addBook(v5, session);
-
-
 
 
 

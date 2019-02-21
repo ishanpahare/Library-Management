@@ -7,6 +7,7 @@
     <script src="js/underscore-min.js"></script>
     <script src="js/backbone-min.js"></script>
     <script src="js/models/vendorBookModel.js"></script>
+    <script src="js/models/vendorModel.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script type="text/javascript" src="js/libraryUtil.js"></script>
 </head>
@@ -53,6 +54,8 @@
                     </div>
                 </li>
             </ul>
+            <span class="navbar-text" id="user-name"></span>
+            <span class="navbar-text">&nbsp;&nbsp;</span>
             <button class="btn btn-outline-danger my-2 my-sm-0" onclick="logout()">Logout</button>
         </div>
     </nav>
@@ -75,37 +78,17 @@
                 </div>
                 <button name="submit" type="submit" id="contact-submit" class="btn btn-primary">Get Books</button>
             </form>
+            <br>
+            <br>
+            <div>
+                <p class="font-italic" id="status"></p>
+            </div>
         </div>
     </div>
 </script>
 </div>
-
-<script type="text/template" id="vendor-table-tmpl">
-<div class="container">
-    <table class="table table-bordered" id="vendor-book-table">
-        <thead id="customer-table-head">
-        <tr>
-            <th>Name</th>
-            <th>Author</th>
-            <th>ISBN</th>
-            <th>Publisher</th>
-            <th>Price</th>
-        </tr>
-        </thead>
-        <tbody id="customer-table-body"></tbody>
-    </table>
-</div>
-</script>
-
-
-<div class="container" id="vendor-book-list"></div>
-<script type="text/template" id="vendor-book-tmpl">
-    <td><%= name %></td>
-    <td><%= author %></td>
-    <td><%= isbn %></td>
-    <td><%= publisher %></td>
-    <td><%= price %></td>
-</script>
+<br>
+<br>
 
 <script src="js/views/VendorBookListView.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -117,5 +100,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script src="js/userDetailDisplay.js"></script>
 </body>
 </html>

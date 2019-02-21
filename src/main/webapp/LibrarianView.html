@@ -12,7 +12,7 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav  onload="displayName()" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#">Library Management</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,6 +53,8 @@
                     </div>
                 </li>
             </ul>
+            <span class="navbar-text" id="user-name"></span>
+            <span class="navbar-text">&nbsp;&nbsp;</span>
             <button class="btn btn-outline-danger my-2 my-sm-0" onclick="logout()">Logout</button>
         </div>
     </nav>
@@ -97,6 +99,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-</body>
+<script src="js/userDetailDisplay.js">
+</script>
 </body>
 </html>

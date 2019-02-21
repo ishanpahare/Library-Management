@@ -4,10 +4,9 @@ import org.hibernate.Session;
 
 public class CurrentSession {
 
-    private static final Session currentSession=HibernateUtil.getSession();
+    private static final Session currentSession = HibernateUtil.getSession();
 
-    public static Session getCurrentSession()
-    {
+    public static Session getCurrentSession() {
         return currentSession;
     }
 

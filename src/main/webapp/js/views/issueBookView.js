@@ -12,10 +12,11 @@ var IssueBookView = Backbone.View.extend({
         this.model.save({uid: uid,cid:cid,lid:lid}, {
             success: function(model, response, options) {
                 console.log('Issue successful');
-                alert('Book Issued Successfully!')
+                document.getElementById('status').innerHTML = "Book issued successfully!"
             },
             error: function(model, xhr, options) {
                 console.log('Save error');
+                document.getElementById('status').innerHTML = "Error in issuing book. Try again."
             }
         });
     },

@@ -53,6 +53,8 @@
                     </div>
                 </li>
             </ul>
+            <span class="navbar-text" id="user-name"></span>
+            <span class="navbar-text">&nbsp;&nbsp;</span>
             <button class="btn btn-outline-danger my-2 my-sm-0" onclick="logout()">Logout</button>
         </div>
     </nav>
@@ -82,6 +84,11 @@
                 </div>
                 <button name="submit" type="submit" id="contact-submit" class="btn btn-primary">Order</button>
             </form>
+            <br>
+            <br>
+            <div>
+                <p class="font-italic" id="status"></p>
+            </div>
         </div>
     </div>
 </script>
@@ -95,6 +102,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-</body>
+<script src="js/userDetailDisplay.js"></script>
 </body>
 </html>

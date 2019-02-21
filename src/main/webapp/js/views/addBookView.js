@@ -14,10 +14,11 @@ var AddBookView = Backbone.View.extend({
         this.model.save({bookName: bookName,author:author,publisher:publisher,isbn:isbn,price:price}, {
             success: function(model, response, options) {
                 console.log('Save successful');
-                alert('Book Added Successfully!')
+                document.getElementById('status').innerHTML = "Book added successfully!"
             },
             error: function(model, xhr, options) {
                 console.log('Save error');
+                document.getElementById('status').innerHTML = "Book could not be added. Try again."
             }
         });
     },

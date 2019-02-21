@@ -34,24 +34,17 @@ public class CustomerService {
         return customer;
     }
 
-    public Customer addCustomer(String name)
+    public Customer addCustomer(String name,String email,String dob,String doj)
     {
         Customer customer = new Customer();
         customer.setName(name);
+        customer.setDob(dob);
+        customer.setDoj(doj);
+        customer.setEmail(email);
         customerDao.insertCustomer(customer,CurrentSession.getCurrentSession());
         return customer;
     }
 
-    /*
-    public Country updateCountry(Country country)
-    {
-        if(country.getId()<=0)
-            return null;
-        countryIdMap.put(country.getId(), country);
-        return country;
-
-    }
-    */
     public void deleteCustomer(int id)
     {
         Customer customer = customerDao.getCustomerById(id,CurrentSession.getCurrentSession());

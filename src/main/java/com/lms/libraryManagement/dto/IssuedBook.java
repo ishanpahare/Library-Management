@@ -22,10 +22,7 @@ public class IssuedBook{
     private String name;
     private String author;
     private String publisher;
-
-    //@Temporal(TemporalType.DATE)
     private String issueDate;
-    //@Temporal(TemporalType.DATE)
     private String returnDate;
 
     @ManyToMany(mappedBy = "issuedBooks",

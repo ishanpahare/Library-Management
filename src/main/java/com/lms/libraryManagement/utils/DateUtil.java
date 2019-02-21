@@ -1,9 +1,10 @@
 package com.lms.libraryManagement.utils;
 
-import java.time.LocalDate;
-import java.time.ZoneId;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 public class DateUtil {
@@ -15,8 +16,15 @@ public class DateUtil {
         return cal.getTime().toString();
     }
 
-    public static long differenceInDays(Date startDate, Date endDate) {
-        long duration = endDate.getTime() - startDate.getTime();
+    public static long differenceInDays(String startDate, Date endDate) {
+        SimpleDateFormat format = new SimpleDateFormat("EE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH);
+        Date first = null;
+        try {
+            first = format.parse(startDate);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        long duration = endDate.getTime() - first.getTime();
         long diffInDays = TimeUnit.MILLISECONDS.toDays(duration);
         return diffInDays;
     }

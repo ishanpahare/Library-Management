@@ -53,6 +53,8 @@
                     </div>
                 </li>
             </ul>
+            <span class="navbar-text" id="user-name"></span>
+            <span class="navbar-text">&nbsp;&nbsp;</span>
             <button class="btn btn-outline-danger my-2 my-sm-0" onclick="logout()">Logout</button>
         </div>
     </nav>
@@ -61,31 +63,40 @@
 <br>
 <br>
 <br>
-    <script type="text/template" id="issue-book-tmpl">
-        <div class="row">
-            <div class="col-md-4 col-centered"></div>
-            <div class="col-md-4 col-centered">
-                <h3>Issue Book</h3>
-                <br>
-                <form>
-                    <div class="form-group">
-                        <label for="InputLID">Librarian ID</label>
-                        <input class="form-control" placeholder="Librarian Id" type="text" id="InputLID" name="lid" tabindex="1" required autofocus>
-                    </div>
-                    <div class="form-group">
-                        <label for="InputCID">Customer ID</label>
-                        <input class="form-control" placeholder="Customer Id" type="text" name="cid" id="InputCID" tabindex="1" required autofocus>
-                    </div>
-                    <div class="form-group">
-                        <label for="InputUID">Book Unique ID</label>
-                        <input class="form-control" placeholder="Unique Id of Book" type="text" name="uid" id="InputUID" tabindex="1" required autofocus>
-                    </div>
-                    <button name="submit" type="submit" id="contact-submit" class="btn btn-primary">Issue Book</button>
-                </form>
+<script type="text/template" id="issue-book-tmpl">
+    <div class="row">
+        <div class="col-md-4 col-centered"></div>
+        <div class="col-md-4 col-centered">
+            <h3>Issue Book</h3>
+            <br>
+            <form>
+                <div class="form-group">
+                    <label for="InputLID">Librarian ID</label>
+                    <input class="form-control" placeholder="Librarian Id" type="text" id="InputLID" name="lid"
+                           tabindex="1" required autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="InputCID">Customer ID</label>
+                    <input class="form-control" placeholder="Customer Id" type="text" name="cid" id="InputCID"
+                           tabindex="1" required autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="InputUID">Book Unique ID</label>
+                    <input class="form-control" placeholder="Unique Id of Book" type="text" name="uid" id="InputUID"
+                           tabindex="1" required autofocus>
+                </div>
+                <button name="submit" type="submit" id="contact-submit" class="btn btn-primary">Issue Book</button>
+            </form>
+            <br>
+            <br>
+            <div>
+                <p class="font-italic" id="status"></p>
             </div>
         </div>
-    </script>
-<script src = js/views/issueBookView.js></script>
+    </div>
+    </div>
+</script>
+<script src=js/views/issueBookView.js></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -95,6 +106,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-</body>
+<script src="js/userDetailDisplay.js"></script>
 </body>
 </html>

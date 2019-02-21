@@ -1,4 +1,5 @@
 var name = sessionStorage.getItem('username')
+
 if (name === null){
     location.replace("index.html");
 }
@@ -7,4 +8,8 @@ document.getElementById("welcomeHeading").innerHTML=message;
 function logout() {
     sessionStorage.clear();
     location.replace('index.html')
+}
+
+function clearSession() {
+    sessionStorage.clear();
 }
