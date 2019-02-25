@@ -6,12 +6,30 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/underscore-min.js"></script>
     <script src="js/backbone-min.js"></script>
-    <script src="js/models/orderBookModel.js"></script>
+    <script src="js/models/customerModel.js"></script>
 </head>
 <body>
 <script type="text/javascript">
-var orderBook = new OrderBook();
-orderBook.save({id:1,isbn:123,quantity:5});
+var name = 'Anthony';
+var email = 'anthonyvinaykumar1992@gmail.com';
+var dob = '1992-05-23';
+var doj = 'Thu Feb 21 2019';
+
+var customers = new CustomerCollection();
+var getCustomers = customers.fetch().then(
+    getCustomers.each(function (customer){
+        var total = 0;
+        if(customer.get('email') == email){
+            total=total+1;
+        }
+        if(total>0){
+            console.log('many with same email exist!')
+        }
+        else {
+            console.log('this person is unique')
+        }
+    })
+)
 </script>
 </body>
 </html>
